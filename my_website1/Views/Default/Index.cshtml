@@ -1,0 +1,110 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="~/App_Data/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="~/App_Data/slick/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/slick/slick.js"></script>
+    <script type="text/javascript" src="~/Scripts/slick/slick.min.js"></script>
+</head>
+<body>
+    <div>
+    </div>
+    <div>
+        @Html.Encode(ViewData["message"])
+    </div>
+    <div class="content">
+        <div class="team-central">
+            <div class="slick team-central">
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Hiroshima.png" /><span>広島カープ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Hanshin.png" /><span>阪神タイガース</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Yokohama.png" /><span>横浜DeNAベイスターズ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Yomiuri.jpg" /><span>読売ジャイアンツ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Chunichi.png" /><span>中日ドラゴンズ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Yakult.png" /><span>東京ヤクルトスワローズ</span></div>
+            </div>
+        </div>
+        <div class="team-pacific">
+            <div class="slick team-pacific">
+                <div><img src="~/App_Data/picture/baseball/NPB/team/SoftBank.png" /><span>福岡ソフトバンクホークス</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Seibu.png" /><span>埼玉西武ライオンズ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Rakuten.jpg" /><span>楽天ゴールデンイーグルス</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Orix.png" /><span>オリックスバッファローズ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Nipponhum.jpg" /><span>北海道日本ハムファイターズ</span></div>
+                <div><img src="~/App_Data/picture/baseball/NPB/team/Thiba.png" /><span>千葉ロッテ</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //$('.my-class').slick();
+        //$(document).ready(function () {
+        //});
+        $(document).ready(function () {
+            $('.team-pacific').slick({
+                
+            });
+            $('.team-central').slick({
+                infinite: true,
+                //infinite: true,
+                //slidesToShow: 3,
+                //slidesToScroll: 10,
+                //centerMode: true,
+                //// アクセシビリティ。左右ボタンで画像の切り替えをできるかどうか
+                //accessibility: true,
+                //// 自動再生。trueで自動再生される。
+                //autoplay: true,
+                //// 自動再生で切り替えをする時間
+                //autoplaySpeed: 3000,
+                //// 自動再生や左右の矢印でスライドするスピード
+                //speed: 400,
+                //// 自動再生時にスライドのエリアにマウスオンで一時停止するかどうか
+                //pauseOnHover: true,
+                //// 自動再生時にドットにマウスオンで一時停止するかどうか
+                //pauseOnDotsHover: true,
+                //// 切り替えのアニメーション。ease,linear,ease-in,ease-out,ease-in-out
+                //cssEase: 'ease',
+                //// 画像下のドット（ページ送り）を表示
+                //dots: false,
+                //// ドットのclass名をつける
+                //dotsClass: 'dot-class',
+                //// ドラッグができるかどうか
+                //draggable: true,
+                //// 切り替え時のフェードイン設定。trueでon
+                //fade: false,
+                //// 左右の次へ、前へボタンを表示するかどうか
+                //arrows: true,
+                //// 無限スクロールにするかどうか。最後の画像の次は最初の画像が表示される。
+                //infinite: true,
+                //// 最初のスライダーの位置
+                //initialSlide: 0,
+                //// 画像の遅延表示。‘ondemand’or'progressive'
+                //lazyLoad: 'ondemand',
+                //// スライドのエリアにマウスオーバーしている間、自動再生を止めるかどうか。
+                //pauseOnHover: true,
+                //// スライドのエリアに画像がいくつ表示されるかを指定
+                //slidesToShow: 4,
+                //// 一度にスライドする数
+                //slidesToScroll: 1,
+                //// タッチスワイプに対応するかどうか
+                //swipe: true,
+                //// 縦方向へのスライド
+                //vertical: false,
+                //// 表示中の画像を中央へ
+                //　centerMode: true,
+                //// 中央のpadding
+                //centerPadding: '160px'
+                
+            });
+        });
+    </script>
+</body>
+</html>
